@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio de divulgação do meu trabalho como desenvolvedor",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raimonesbarros/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Raimones Barros",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/raimonesbarros/portfolio/issues"
+  },
+  "homepage": "https://github.com/raimonesbarros/portfolio#readme"
+}

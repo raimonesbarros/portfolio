@@ -3,8 +3,8 @@
 
 /* animations */
 @keyframes arrow {
-  from{bottom: 5%;}
-  to{bottom: 10%;}
+  from{bottom: 6%;}
+  to{bottom: 12%;}
 }
 
 @keyframes appear {
@@ -30,12 +30,12 @@
 
 @keyframes s1 {
   from{transform: rotate(0deg)}
-  to{transform: translateY(9px) rotate(-45deg); width: 110%;}
+  to{transform: translateY(10px) rotate(-45deg); width: 110%;}
 }
 
 @keyframes s3 {
   from{transform: rotate(0deg)}
-  to{transform: translate(0,-7px) rotate(45deg); width: 110%;}
+  to{transform: translateY(-8px) rotate(45deg); width: 110%;}
 }
 
 *{
@@ -55,8 +55,12 @@
 }
 
 /* general */
+html{
+  scroll-behavior: smooth;
+
+}
 html, body{
-  background-color: #000000;
+  background-color: #000;
 }
 
 .container{
@@ -128,19 +132,20 @@ html, body{
 
 /* header */
 header{
+  background-color: #000;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
-  z-index: 999;
+  z-index: 1;
 }
 
 header .navbar{
   height: var(--header);
+  padding-top: 1em;
 }
 
 .brand{
-  max-width: 60px;
+  max-width: 75px;
 }
 
 .name{
@@ -174,35 +179,43 @@ header .navbar{
 
 /* Button menu */
 .btn-menu .sand{
-  width: 1.8em;
+  width: 2.5em;
   height: 1.5em;
 }
 
 .btn-menu .s{
   background-color: var(--highlithColor);
   width: 100%;
-  height: .3em;
+  height: 6px;
   margin: .2em 0;
   border-radius: 5px;
 }
 
-.btn-menu .s1{
+.btn-menu .opens1{
   animation: s1 .5s forwards;
 }
-.btn-menu .s2{
+.btn-menu .opens2{
   animation: opacity .5s forwards;
 }
-.btn-menu .s3{
+.btn-menu .opens3{
   animation: s3 .5s forwards;
+}
+
+.btn-menu .closes1{
+  animation: s1 .5s forwards reverse;
+}
+.btn-menu .closes2{
+  animation: opacity .5s forwards reverse;
+}
+.btn-menu .closes3{
+  animation: s3 .5s forwards reverse;
 }
 
 /* Showcase */
 .showcase{
-  height: calc(100vh - var(--header));
-  margin-top: var(--header);
-  background-color: #000000;
+  height: 100vh;
   position: relative;
-  border-bottom:  1px #e4e4e427 solid;
+  border-bottom:  1px #e4e4e4 solid;
 }
 
 .showcase .text{
@@ -216,14 +229,13 @@ header .navbar{
   font-size: 2em;
   color: #999;
   font-weight: 300;
-  text-shadow: 0 0 10px black, 0 0 10px black;
 }
 
 .showcase .writing{
   width: 4.65em;
   font-size: 2em;
   color: #e4e4e4;
-  font-weight: 500;
+  font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -251,7 +263,7 @@ header .navbar{
 .arrow{
   width: 2em;
   position: absolute;
-  bottom: 1em;
+  bottom: 6%;
   left: 50%;
   transform: translateX(-50%);
   animation: arrow .6s 4s alternate infinite;
@@ -454,23 +466,27 @@ footer span{
   .btn-menu{
     display: none;
   }
+
+  .nav-list{
+    display: flex;
+  }
 }
 
 @media screen and (width < 768px){
   .nav-list{
     background-color: #1f1f1f;
     position: absolute;
-    top: 55px;
+    top: calc(var(--header));
     left: 50%;
     transform: translate(-50%,0);
     flex-direction: column;
     width: 100%;
     padding: 1em;
-    display: none;
+    animation: opacity .4s reverse;
   }
 
   .nav-item, .social{
-    padding: .4em .5em;
+    padding: 1em;
   }
 
   .skills .cards{

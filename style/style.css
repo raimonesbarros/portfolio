@@ -55,10 +55,6 @@
 }
 
 /* general */
-html{
-  scroll-behavior: smooth;
-
-}
 html, body{
   background-color: #000;
 }
@@ -70,6 +66,7 @@ html, body{
 .container, .full-container{
   max-width: var(--maxWidth);
   margin: auto;
+  overflow: hidden;
 }
 
 .between{
@@ -239,7 +236,7 @@ header .navbar{
 .showcase{
   height: 100vh;
   position: relative;
-  border-bottom:  1px #e4e4e4 solid;
+  border-bottom:  1px #e4e4e450 solid;
 }
 
 .showcase .text{
@@ -311,7 +308,7 @@ header .navbar{
 /* skills */
 .skills{
   min-height: calc(100vh - var(--header));
-  border-bottom:  1px #e4e4e427 solid;
+  border-bottom:  1px #e4e4e450 solid;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -351,7 +348,7 @@ header .navbar{
 /* projects */
 .projects{
   height: calc(100vh - var(--header));
-  border-bottom:  1px #e4e4e427 solid;
+  border-bottom:  1px #e4e4e450 solid;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -438,7 +435,7 @@ header .navbar{
 .about{
   position: relative;
   min-height: calc(100vh - var(--header));
-  border-bottom:  1px #e4e4e427 solid;
+  border-bottom:  1px #e4e4e450 solid;
   overflow: hidden;
 }
 
@@ -464,7 +461,7 @@ header .navbar{
 
 /* Contact */
 .contact{
-  border-bottom:  1px #e4e4e427 solid;
+  border-bottom:  1px #e4e4e450 solid;
 }
 
 .contacts{

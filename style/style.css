@@ -130,6 +130,30 @@ html, body{
   border-radius: 30px;
 }
 
+/* Animations scrollbar */
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="botton"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
 /* header */
 header{
   background-color: #000;
@@ -192,23 +216,23 @@ header .navbar{
 }
 
 .btn-menu .opens1{
-  animation: s1 .5s forwards;
+  animation: s1 .2s forwards;
 }
 .btn-menu .opens2{
-  animation: opacity .5s forwards;
+  animation: opacity .2s forwards;
 }
 .btn-menu .opens3{
-  animation: s3 .5s forwards;
+  animation: s3 .2s forwards;
 }
 
 .btn-menu .closes1{
-  animation: s1 .5s forwards reverse;
+  animation: s1 .2s forwards reverse;
 }
 .btn-menu .closes2{
-  animation: opacity .5s forwards reverse;
+  animation: opacity .2s forwards reverse;
 }
 .btn-menu .closes3{
-  animation: s3 .5s forwards reverse;
+  animation: s3 .2s forwards reverse;
 }
 
 /* Showcase */
@@ -412,22 +436,30 @@ header .navbar{
 
 /* About */
 .about{
+  position: relative;
   min-height: calc(100vh - var(--header));
   border-bottom:  1px #e4e4e427 solid;
+  overflow: hidden;
 }
 
 .about img{
-  width: 31.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 502px;
   border-left: 2px solid var(--highlithColor);
   border-bottom: 2px solid var(--highlithColor);
 }
 
 .about p{
-  color: #999;
-  width: 50%;
-  text-align: justify;
-  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 70%;
+  color: #e4e4e4;
+  padding: 1em;
   text-indent: 15px;
+  text-shadow: 0 0 2px #000;
 }
 
 /* Contact */
@@ -470,6 +502,7 @@ footer span{
   .nav-list{
     display: flex;
   }
+
 }
 
 @media screen and (width < 768px){
@@ -482,7 +515,7 @@ footer span{
     flex-direction: column;
     width: 100%;
     padding: 1em;
-    animation: opacity .4s reverse;
+    animation: opacity .2s reverse;
   }
 
   .nav-item, .social{
@@ -496,6 +529,17 @@ footer span{
   .skills .card{
     margin: 1em 0;
   }
+  
+  .about img{
+    top: 0;
+    width: 400px;
+  }
+
+  .about p{
+    top: 30%;
+    width: 60%;
+  }
+
 
 }
 
@@ -512,7 +556,15 @@ footer span{
     min-width: 110px;
     margin: 0;
     padding: .15em 0;
+  }  
+
+  .about img{
+    top: 100%;
+    transform: translateY(-100%);
+    width: 300px;
+    opacity: .5;
   }
+
 }
 
 @media screen and (width <= 410px){
@@ -534,7 +586,4 @@ footer span{
     padding: 1em;
   }
 
-  .about p{
-    width: 65%;
-  }
 }

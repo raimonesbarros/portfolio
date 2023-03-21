@@ -1,3 +1,5 @@
+//Animate scroll-behavior: Smooth
+
 const navItens = document.querySelectorAll('.nav-item a[href^="#"]');
 
 navItens.forEach(item=>{
@@ -21,7 +23,7 @@ function scrollToPosition(to) {
   //   top: to,
   //   behavior: "smooth",
   // });
-  smoothScrollTo(0, to, 1000);
+  smoothScrollTo(0, to);
 }
 
 /**
@@ -55,3 +57,43 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+
+// Animate appear with scroll
+
+// Debounce do Lodash
+const debounce = function(func, wait, immediate) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+function animeScroll() {
+  const windowTop = window.pageYOffset + ((window.innerHeight * 5) / 6);
+  target.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  })
+}
+
+animeScroll();
+
+if(target.length) {
+  window.addEventListener('scroll', debounce(function() {
+    animeScroll();
+  }, 200));
+}

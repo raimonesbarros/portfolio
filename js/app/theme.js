@@ -13,6 +13,7 @@ const span    = document.querySelectorAll('.span')
 const p       = document.querySelectorAll('p')
 const bgImg   = document.querySelector('.bg-img')
 const section = document.querySelectorAll('section')
+const textSha = document.querySelector('.about p')
 
 theme!=currentMode? darkMode():''
 
@@ -28,6 +29,7 @@ function darkMode(){
   body.classList.toggle('bgDark')
   header.classList.toggle('bgDark')
   navLists.classList.toggle('bgDark')
+  textSha.classList.toggle('text-shadow')
   bgImg.classList.toggle('showcaseOpacity')
   section.forEach(el=>{
     el.classList.toggle('box-shadow')

@@ -22,4 +22,3 @@ window.addEventListener('click', evt=>{
     navList.classList.add('disable')
   }
 })
-

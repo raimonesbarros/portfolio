@@ -6,7 +6,9 @@ const mode    = document.querySelectorAll('.mode');
 const dark    = document.querySelector('.dark')
 const light   = document.querySelector('.light')
 const body    = document.querySelector('body')
+const html    = document.querySelector('html')
 const header  = document.querySelector('header')
+const navLists= document.querySelector('.nav-list')
 const span    = document.querySelectorAll('.span')
 const p       = document.querySelectorAll('p')
 const bgImg   = document.querySelector('.bg-img')
@@ -22,8 +24,10 @@ function darkMode(){
   currentMode=='light'? currentMode = 'dark': currentMode = 'light'
   dark.classList.toggle('disable')
   light.classList.toggle('disable')
+  html.classList.toggle('bgDark')
   body.classList.toggle('bgDark')
   header.classList.toggle('bgDark')
+  navLists.classList.toggle('bgDark')
   bgImg.classList.toggle('showcaseOpacity')
   section.forEach(el=>{
     el.classList.toggle('box-shadow')

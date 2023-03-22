@@ -12,27 +12,29 @@
   <title>RSB Developer | Bem-vind@</title>
   <link rel="shortcut icon" href="img/logoRSB.png" type="image/x-icon">
   <link rel="stylesheet" href="style/style.css">
+  <script src="js/main.js" defer></script>
   <script src="js/app/btnMenu.js" defer></script>
   <script src="js/app/scrollTo.js" defer></script>
+  <script src="js/app/theme.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="container">
+    <section class="container box-shadow">
       <nav class="navbar between center">
         <img class="brand" src="img/logoRSB.png" alt="logo RSB">
         <h1 class="name">Raimones desenvolvedor web</h1>
         <ul class="nav-list between-center disable">
           <li class="nav-item closes2">
-            <a href="#showcase">INÍCIO</a>
+            <a href="#showcase" class="span">INÍCIO</a>
           </li>
           <li class="nav-item closes2">
-            <a href="#project">PROJETOS</a>
+            <a href="#project" class="span">PROJETOS</a>
           </li>
           <li class="nav-item closes2">
-            <a href="#about">SOBRE</a>
+            <a href="#about" class="span">SOBRE</a>
           </li>
           <li class="nav-item closes2">
-            <a href="#contact">CONTATO</a>
+            <a href="#contact" class="span">CONTATO</a>
           </li>
           <li class="social center closes2">
             <a class="icon-social center-center" href="https://www.linkedin.com/in/raimones-barros-b6577492/" target="_blank">
@@ -41,6 +43,8 @@
             <a class="icon-social center-center" href="https://github.com/raimonesbarros?tab=overview&from=2023-01-01&to=2023-01-01" target="_blank">
               <img class="icon-social center" src="https://icongr.am/simple/github.svg?size=70&color=45c7af&colored=false" alt="icone do github">
             </a>
+            <img class="icon-social mode dark center" src="https://icongr.am/feather/moon.svg?size=30&color=000000" alt="icone de lua">
+            <img class="icon-social mode light center disable" src="https://icongr.am/feather/sun.svg?size=30&color=ffffff" alt="icone do sol">
           </li>
         </ul>
         <div class="btn-menu">
@@ -56,55 +60,55 @@
           </div>
         </div>
       </nav>
-    </div>
+    </section>
   </header>
   <main>
-    <section id="showcase" class="full-container">
+    <section id="showcase" class="full-container box-shadow">
       <div class="showcase">
         <div class="text">
           <p>Meu nome é</p>
-          <p class="writing diff1">Raimones,</p>
+          <p class="writing diff1 span">Raimones,</p>
           <p>eu sou</p>
-          <p class="writing diff2">Desenvolvedor</p>
+          <p class="writing diff2 span">Desenvolvedor</p>
           <p>e esse é meu portfólio</p>
-          <p class="writing diff3">Front-end.</p>
+          <p class="writing diff3 span">Front-end.</p>
         </div>
         <img class="bg-img" src="img/showcase-removebg-preview.png" alt="Homem programando no escuro">
         <img class="arrow" src="https://icongr.am/entypo/chevron-thin-down.svg?size=70&color=45c7af" alt="seta para baixo">
       </div>
     </section>
-    <section class="skills full-container">
-      <h1 class="subtitle" data-anime="left">algumas <span>Habilidades</span></h1>
+    <section class="skills full-container box-shadow">
+      <h1 class="subtitle" data-anime="left">algumas <span class="span">Habilidades</span></h1>
       <div class="cards">
         <div class="card" data-anime="left">
           <div class="evenly-center">
             <img src="https://icongr.am/entypo/code.svg?size=70&color=45c7af" alt="icone referente a código de linguagens de programação ">
-            <h2> Código semântico</h2>
+            <h2 class="span"> Código semântico</h2>
           </div>
           <p>Estrutura descritiva clara e objetiva para facilitar a leitura e interpretação, especialmente, de motores de busca.</p>
         </div>
         <div class="card" data-anime="left">
           <div class="evenly-center">
             <img src="https://icongr.am/clarity/devices.svg?size=70&color=45c7af" alt="icone referente a dispositivos eletrônicos ">
-            <h2>Responsividade</h2></div>
+            <h2 class="span">Responsividade</h2></div>
           <p>Estilos preparados para se adapatar aos diferentes navegadores e dispositivos.</p>
         </div>
         <div class="card" data-anime="right">
           <div class="evenly-center">
             <img src="https://icongr.am/feather/layout.svg?size=70&color=45c7af" alt="icone referente a layout ">
-            <h2>Design atrativo</h2>
+            <h2 class="span">Design atrativo</h2>
           </div>
           <p>Criação visual utilizando técnicas de design como psicologia das cores, tipografia, hierarquia e etc...</p>
         </div>
         <div class="card" data-anime="right">
           <div class="evenly-center">
             <img src="https://icongr.am/clarity/cursor-hand-click.svg?size=70&color=45c7af" alt="icone referente ao cursor ">
-            <h2>Dinâmicidade</h2>
+            <h2 class="span">Dinâmicidade</h2>
           </div>
           <p>Uso de métodos dinâmicos e de interatividade com o usuário para garantir uma melhor experiência.</p>
         </div>
       </div>
-      <h1 class="subtitle" data-anime="right"><span>Tecnologias </span> que estou utilizando</h1>
+      <h1 class="subtitle" data-anime="right"><span class="span">Tecnologias </span> que estou utilizando</h1>
       <div class="techs evenly-center">
         <div class="tech" data-anime="botton">
           <img src="https://icongr.am/devicon/html5-plain-wordmark.svg?size=128&color=45c7af" alt="icone html">
@@ -123,8 +127,8 @@
         </div>
       </div>
     </section>
-    <section id="project" class="projects full-container">
-      <h1 class="subtitle" data-anime="left">alguns <span>Projetos</span> realizados</h1>
+    <section id="project" class="projects full-container box-shadow">
+      <h1 class="subtitle" data-anime="left">alguns <span class="span">Projetos</span> realizados</h1>
       <div class="show"  data-anime="botton">
         <img src="img/init.jpg">
         <div class="button center-center">
@@ -154,45 +158,45 @@
         <img class="navigation" src="https://icongr.am/octicons/chevron-right.svg?size=70&color=45c7af" alt="seta para esquerda">
       </div>
     </section>
-    <section id="about" class="about full-container">
-      <h1 class="subtitle" data-anime="right">um pouco <span> Sobre mim</span></h1>
+    <section id="about" class="about full-container box-shadow">
+      <h1 class="subtitle" data-anime="right">um pouco <span class="span"> Sobre mim</span></h1>
       <div>
         <img src="img/eu.png" alt="Foto de raimones">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi optio, consequatur atque alias beatae laudantium. Ducimus, id vero saepe dolore ipsum illo inventore perferendis exercitationem, sed explicabo atque animi.</p>
+        <p class="span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi optio, consequatur atque alias beatae laudantium. Ducimus, id vero saepe dolore ipsum illo inventore perferendis exercitationem, sed explicabo atque animi.</p>
       </div>
     </section>
-    <section id="contact" class="contact full-container">
-      <h1 class="subtitle" data-anime="left">Entre em <span>contato</span> comigo</h1>
+    <section id="contact" class="contact full-container box-shadow">
+      <h1 class="subtitle" data-anime="left">Entre em <span class="span">contato</span> comigo</h1>
       <div class="contacts evenly-center">
         <div data-anime="botton">
           <a class="column center-center" href="https://wa.link/m1vxo0" target="_blank">
             <img src="https://icongr.am/feather/phone.svg?size=128&color=45c7af" alt="icone de telefone">
-            <h2>WhatsApp</h2>
+            <h2 class="span">WhatsApp</h2>
           </a>
         </div>
         <div data-anime="botton">
           <a class="column center-center" href="mailto:raimonesrg3@gmail.com" target="_blank">
             <img src="https://icongr.am/feather/mail.svg?size=128&color=45c7af" alt="icone de carta">
-            <h2>Email</h2>
+            <h2 class="span">Email</h2>
           </a>
         </div>
         <div data-anime="botton">
           <a class="column center-center" href="https://www.linkedin.com/in/raimones-barros-b6577492/" target="_blank">
             <img src="https://icongr.am/feather/linkedin.svg?size=128&color=45c7af" alt="icone do linkedin">
-            <h2>Linkedin</h2>
+            <h2 class="span">Linkedin</h2>
           </a>
         </div>
         <div data-anime="botton">
           <a class="column center-center" href="https://www.instagram.com/silvabarross/" target="_blank">
             <img src="https://icongr.am/feather/instagram.svg?size=128&color=45c7af" alt="icone do instagram">
-            <h2>Instagram</h2>
+            <h2 class="span">Instagram</h2>
           </a>
         </div>
       </div>
     </section>
   </main>
   <footer class="center-center">
-    <p><span>Raimones</span> copyright &copy <span>2023</span> | Todos os direitos reservados</p>
+    <p><span class="span">Raimones</span> copyright &copy <span class="span">2023</span> | Todos os direitos reservados</p>
   </footer>
 </body>
 </html>

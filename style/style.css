@@ -576,6 +576,10 @@ footer span{
     opacity: .7 !important;
   }
 
+  .slides .mini::-webkit-scrollbar{
+    display: none;
+  }
+
 }
 
 @media screen and (width < 500px){

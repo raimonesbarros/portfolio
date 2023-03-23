@@ -402,16 +402,20 @@ header .nav-list{
   transform: translate(-50%);
 }
 
+.show a{
+  width: 40%;
+  cursor: pointer;
+}
+
 .show button{
   background-color: #1a1a1a91;
   color: var(--highlithColor);
-  width: 40%;
-  margin: 0 1em;
-  padding: .4em .5em;
+  width: 100%;
+  padding: .5em;
   border-radius: 5px;
   border: 2px solid var(--highlithColor);
-  cursor: pointer;
   font-size: 1.29em;
+  cursor: pointer;
 }
 
 .show .deploy{
@@ -426,13 +430,18 @@ header .nav-list{
 
 .slides .mini{
   display: flex;
-  margin: 2em 0;
+  margin: 1.5em 0;
+  padding-bottom: .5em;
   overflow: auto;
   white-space: nowrap;
 }
 
 .slides .mini::-webkit-scrollbar-thumb{
-  background-color: transparent;
+  background-color: var(--highlithColor);
+}
+
+.slides .mini::-webkit-scrollbar{
+  height: .5em;
 }
 
 .slides .card{
@@ -455,7 +464,6 @@ header .nav-list{
 
 .slides .navigation{
   width: 40px;
-  cursor: pointer;
 }
 
 

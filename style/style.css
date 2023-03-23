@@ -266,7 +266,7 @@ header .nav-list{
 }
 
 .open-project{
-  animation: openProject .5s forwards;
+  animation: openProject .1s forwards;
 }
 
 /* Showcase */
@@ -536,6 +536,7 @@ header .nav-list{
 
 /* Footer */
 footer{
+  position: relative;
   color: #999;
   font-weight: 300;
   padding: 2em;
@@ -544,6 +545,17 @@ footer{
 
 footer span{
   font-weight: bold;
+}
+
+footer a{
+  position: absolute;
+  right: 1em;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+footer img{
+  width: 50px;
 }
 
 @media screen and (width >= 768px) {

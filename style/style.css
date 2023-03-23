@@ -3,8 +3,8 @@
 
 /* animations */
 @keyframes arrow {
-  from{bottom: 6%;}
-  to{bottom: 12%;}
+  from{bottom: 7%;}
+  to{bottom: 10%;}
 }
 
 @keyframes appear {
@@ -36,6 +36,10 @@
 @keyframes s3 {
   from{transform: rotate(0deg)}
   to{transform: translateY(-12px) rotate(45deg); width: 110%;}
+}
+
+@keyframes openProject {
+  from{transform: translateY(200px); width: 200px;}
 }
 
 *{
@@ -261,10 +265,15 @@ header .nav-list{
   animation: s3 .2s forwards reverse;
 }
 
+.open-project{
+  animation: openProject .5s forwards;
+}
+
 /* Showcase */
 .showcase{
-  height: 100vh;
+  min-height: calc(100vh - var(--header));
   position: relative;
+  margin-top: var(--header);
   border-bottom:  1px #e4e4e450 solid;
 }
 
@@ -374,7 +383,7 @@ header .nav-list{
 
 /* projects */
 .projects{
-  height: calc(100vh - var(--header));
+  min-height: calc(100vh - var(--header));
   border-bottom:  1px #e4e4e450 solid;
   display: flex;
   flex-direction: column;
@@ -583,6 +592,11 @@ footer span{
 }
 
 @media screen and (width < 500px){
+  
+  .showcase .bg-img{
+    left: 0;
+  }
+
   .skills .cards{
     grid-template-columns: auto;
   }

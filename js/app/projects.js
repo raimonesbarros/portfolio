@@ -43,6 +43,12 @@ export class Project{
         deploy: 'https://raimonesbarros.github.io/dev-fora-da-caixa/',
         gitHub: 'https://github.com/raimonesbarros/dev-fora-da-caixa'
       },
+      {
+        name  : 'p8',
+        img   : 'img/p8.jpg',
+        deploy: '#project',
+        gitHub: 'https://github.com/raimonesbarros/portfolio'
+      },
     ]
 
     this.show    = document.querySelector('.show img')
@@ -61,8 +67,12 @@ export class Project{
     this.list.map(el=>{
       if(el.name == projeto){
         this.show.setAttribute('src', el.img)
-        this.deploy.setAttribute('ref', el.deploy)
-        this.project.setAttribute('ref', el.gitHub)
+        this.show.parentNode.classList.add('open-project')
+        this.deploy.setAttribute('href', el.deploy)
+        this.project.setAttribute('href', el.gitHub)
+        setTimeout(()=>{
+          this.show.parentNode.classList.remove('open-project')
+        }, 600)
       }
     })
   }

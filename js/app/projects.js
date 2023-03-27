@@ -46,8 +46,14 @@ export class Project{
       {
         name  : 'p8',
         img   : 'img/p8.jpg',
-        deploy: '#project',
+        deploy: '',
         gitHub: 'https://github.com/raimonesbarros/portfolio'
+      },
+      {
+        name  : 'p9',
+        img   : 'img/p9.jpg',
+        deploy: 'https://raimonesbarros.github.io/abrigo-amigo/',
+        gitHub: 'https://github.com/raimonesbarros/abrigo-amigo'
       },
     ]
 

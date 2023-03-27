@@ -387,8 +387,9 @@ header .nav-list{
   border-bottom:  1px #e4e4e450 solid;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 0 3rem 0;
 }
 
 .projects .show{

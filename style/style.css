@@ -378,7 +378,14 @@ header .nav-list{
 }
 
 .skills .techs{
-  margin: 1em;
+  flex-wrap: wrap;
+}
+
+.skills .tech{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
 }
 
 /* projects */

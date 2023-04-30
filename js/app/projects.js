@@ -50,16 +50,16 @@ export class Project{
         gitHub: 'https://github.com/raimonesbarros/abrigo-amigo'
       },
       {
-        name  : 'p9',
-        img   : 'img/p9.jpg',
-        deploy: '',
-        gitHub: 'https://github.com/raimonesbarros/portfolio'
-      },
-      {
         name  : 'p10',
         img   : 'img/p10.jpg',
         deploy: 'https://raimonesbarros.github.io/aprenda-teclado-musical/',
         gitHub: 'https://github.com/raimonesbarros/aprenda-teclado-musical'
+      },
+      {
+        name  : 'p9',
+        img   : 'img/p9.jpg',
+        deploy: '',
+        gitHub: 'https://github.com/raimonesbarros/portfolio'
       },
       {
         name  : 'p11',

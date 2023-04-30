@@ -61,6 +61,12 @@ export class Project{
         deploy: 'https://raimonesbarros.github.io/aprenda-teclado-musical/',
         gitHub: 'https://github.com/raimonesbarros/aprenda-teclado-musical'
       },
+      {
+        name  : 'p11',
+        img   : 'img/p11.jpg',
+        deploy: 'https://raimonesbarros.github.io/igloo-sorveteria/',
+        gitHub: 'https://github.com/raimonesbarros/igloo-sorveteria'
+      },
     ]
 
     this.show    = document.querySelector('.show img')

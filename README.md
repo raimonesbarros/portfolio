@@ -1,4 +1,4 @@
-<h1><span><img src="./img/favicon.png" width="20em"></span> Portfólio</h1> 
+<h1><span><img src="./img/favicon.png" width="20em"></span> Portfólio :own</h1>
 
 ## Página de divulgação dos meus projetos
 
@@ -30,6 +30,10 @@
 </div>
 
 ----
+
+## Legenda
+:own - Projeto próprio
+
 ----
 
 <div align='center'>
